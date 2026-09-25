@@ -27,3 +27,9 @@ git clone https://github.com/eamonxg/luci-theme-aurora package/luci-theme-aurora
 git clone https://github.com/eamonxg/luci-app-aurora-config package/luci-app-aurora-config
 git clone https://github.com/timsaya/luci-app-bandix package/luci-app-bandix
 git clone https://github.com/timsaya/openwrt-bandix package/openwrt-bandix
+
+# ===== 自定义追加 =====
+# Passwall 插件 feed
+# 注意: 上游组织已从 xiaorouji 迁移到 Openwrt-Passwall,旧地址已 404
+echo 'src-git passwall_packages https://github.com/Openwrt-Passwall/openwrt-passwall-packages' >>feeds.conf.default
+echo 'src-git passwall          https://github.com/Openwrt-Passwall/openwrt-passwall' >>feeds.conf.default
